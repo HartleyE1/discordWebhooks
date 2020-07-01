@@ -1,9 +1,9 @@
 function sendMessage1() {
 
-    var contentText = document.getElementById('webhookContent');
-    var URL = document.getElementById('webhookURL');
-    var username = document.getElementById('webhookUsername');
-    var avatar = document.getElementById('webhookAvatar');
+    var contentText = document.getElementById('webhookContent').value;
+    var URL = document.getElementById('webhookURL').value;
+    var username = document.getElementById('webhookUsername').value;
+    var avatar = document.getElementById('webhookAvatar').value;
 
     var request = new XMLHttpRequest(URL);
     request.open("POST", "");
